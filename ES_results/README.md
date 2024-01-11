@@ -22,14 +22,14 @@ docker pull elasticsearch:[version]
 `elasticsearch/config/elasticsearch.yml` - базовая конфигурация ES (имя кластера, network.hosts - 
 настройка адресов, с котрых можно подключаться к  ES, настройки X-Pack лицензии, безопасности и мониторинга)
 
-См. [elasticsearch.yml](elasticsearch.yml)
+См. [elasticsearch.yml](../elasticsearch.yml)
 
 `Dockerfile` - загрузка файла c https://www.docker.elastic.co/ (не будет использован в случае РФ, в docker-compose файле будет использован image-образ, установленный с docker-hub)
 
 `docker-compose.yml` - основной конфиг-файл для оркестрации контейнеров
 В данном случае отвечает за настройку службы Elasticsearch, другие службы прописываются здесь же, в `services`
 
-См. [docker-compose.yml](docker-compose.yml)
+См. [docker-compose.yml](../docker-compose.yml)
 
 4. Запустить Docker Compose
 
